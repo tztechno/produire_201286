@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+
+<head>
+	<meta http-equiv="Content-Language" content="ja">
+	<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<title>[ソースファイル名]のドキュメント</title>
+</head>
+<body>
+<div>
+<div class="outline">
+	<p>
+[（種類一覧）のすべての「対象種類」を、『
+	<a href="#[対象種類の名前]">[対象種類の名前]</a><br>
+』へ展開したもの]
+	</p>
+</div>
+<div class="header">
+	<h1>[ソースファイル名]のドキュメント</h1>
+</div>
+<div class="content">
+[（種類一覧）のすべての「対象種類」を、『
+	<h2><a name="[対象種類の名前]">[対象種類の名前]</a></h2>
+	<p>[対象種類の説明文]</p>
+	[対象種類の作成者があれば『<p><b>作成者</b>　[対象種類の作成者]</p>』を表示する]
+	[対象種類のバージョンがあれば『<p><b>バージョン</b>　[対象種類のバージョン]</p>』を表示する]
+	[（対象種類の操作一覧）のすべての「対象手順」を、『
+		<h3>[「][対象手順の名前][」]手順</h3>
+		<p>[(対象手順の説明文)から改行を「<br>[改行]」へ置換したもの]</p>
+		<p class="format">[対象手順の書式]</p>
+		<ul>
+		[（対象手順の仮引数一覧）のすべての「仮引数」を、『
+			<li>[仮引数の名前]　…　[仮引数の説明文]</li>
+		』へ展開したもの]
+		</ul>
+		<p><b>戻り値</b>　[対象手順の戻り値]</p>
+	[対象手順の使用例があれば『<h4使用例</h4><p class="code">[(対象手順の使用例)から改行を「<br>[改行]」へ置換したもの]</p>』を表示する]
+	』へ展開したもの]
+
+	<h3>フィールド</h3>
+	<table class="doctable">
+		<tr><th>フィールド名</th><th>説明</th></tr>
+	[（対象種類の変数一覧）のすべての「対象変数」を、『
+		<tr>
+			<td>[対象変数の名前]</td>
+			<td>[対象変数の説明文]</td>
+		</tr>
+	』へ展開したもの]
+	</table>
+	<hr>
+』へ展開したもの]
+</div>
+</div>
+</body>
+</html>

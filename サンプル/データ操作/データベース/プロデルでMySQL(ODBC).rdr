@@ -1,0 +1,46 @@
+﻿//MySQLデータベースへの接続例
+//このサンプルを実行するには、MySQLとMySQL ODBC Connectionが必要です
+
+MySQLというODBCデータベースを作る
+
+MySQLのデータソースファイルは「[プログラムの位置]mysql.dsn」
+/*
+MySQLのドライバは「{MySQL ODBC 5.1 Driver}」
+MySQLのユーザ名は「root」
+MySQLのパスワードは「」
+MySQLのデータベースは「test」
+*/
+MySQLへ接続する
+
+ーーテーブルの作成
+MySQLで「CREATE TABLE 楽曲 (曲名 VARCHAR(30),アーティスト VARCHAR(30), アルバムID INTEGER);」を実行する
+
+ーーデータの取得
+MySQLから「SELECT 曲名 FROM 楽曲」を取得して、結果とする
+結果の内容を表示する
+
+ーーデータの追加
+「INSERT INTO 楽曲 (曲名,アーティスト) values ('I AM YOUR SINGER','サザンオールスターズ')」をMySQLで実行して、結果とする
+ーー「［結果］件、処理しました」を情報で、表示
+
+MySQLから「SELECT 曲名 FROM 楽曲 WHERE 曲名='I AM YOUR SINGER'」を取得して、結果とする
+「追加後」として結果の内容を表示する
+
+ーーデータの更新
+「UPDATE 楽曲 SET 曲名='I am your singer' WHERE 曲名='I AM YOUR SINGER'」をMySQLで実行して、結果とする
+ーー「［結果］件、処理しました」を情報で、表示する
+
+MySQLから「SELECT 曲名 FROM 楽曲」を取得して、結果とする
+「更新後」として結果の内容を表示する
+
+ーーデータの削除
+「DELETE FROM 楽曲 WHERE 曲名='I AM YOUR SINGER'」をMySQLで実行して、結果とする
+ーー「［結果］件、処理しました」を情報で、表示する
+
+MySQLから「SELECT 曲名 FROM 楽曲」を取得して、結果とする
+「削除後」として結果の内容を表示する
+
+ーーテーブルの削除
+MySQLで「DROP TABLE 楽曲」を実行する
+
+MySQLから切断する

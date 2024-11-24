@@ -1,0 +1,2037 @@
+/*プロデルチャート
+プロデル1.7.1080*/
+"System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"をネット型として利用する
+
+チャートとは
+	"System.Windows.Forms.DataVisualization.Charting.Chart"のネット型に対応する
+	はじめの手順
+	終わり
+	自分に【t:タイトル】を加える手順
+		Titles:Add(t)
+	終わり
+	自分に【t:チャートエリア】を加える手順
+		ChartAreas:Add(t)
+	終わり
+	自分に【t:シリーズ】を加える手順
+		Series:Add(t)
+	終わり
+	自分に〈【見出し】という〉円グラフを、作る手順
+		見出しというシリーズXを作る
+		シリーズ列1のChartType=「Pie」
+		シリーズ列1を返す
+	終わり
+	自分に〈【見出し】という〉ピラミッドグラフを、作る手順
+		見出しというシリーズXを作る
+		シリーズ列1のChartType=「Pyramid」
+		シリーズ列1を返す
+	終わり
+	自分に〈【見出し】という〉じょうごグラフを、作る手順
+		見出しというシリーズXを作る
+		シリーズ列1のChartType=「Funnel」
+		シリーズ列1を返す
+	終わり
+	自分に〈【見出し】という〉ドーナツグラフを、作る手順
+		見出しというシリーズXを作る
+		シリーズ列1のChartType=「Doughnut」
+		シリーズ列1を返す
+	終わり
+	自分に〈【見出し】という〉散布図を、作る手順
+		見出しというシリーズXを作る
+		シリーズ列1のChartType=「Point」
+		シリーズ列1を返す
+	終わり
+	自分に〈【見出し】という〉ローソク足を、作る手順
+		見出しというシリーズXを作る
+		シリーズ列1のChartType=「Candlestick」
+		シリーズ列1を返す
+	終わり
+	自分に〈【見出し】という〉バブルチャートを、作る手順
+		見出しというシリーズXを作る
+		シリーズ列1のChartType=「Bubble」
+		シリーズ列1を返す
+	終わり
+	
+	自分に〈【見出し】という〉折れ線グラフを、作る手順
+		見出しというシリーズXを作る
+		シリーズ列1のChartType=「Line」
+		シリーズ列1を返す
+	終わり
+	自分に〈【見出し】という〉横棒グラフを、作る手順
+		見出しというシリーズXを作る
+		シリーズ列1のChartType=「Bar」
+		シリーズ列1を返す
+	終わり
+	自分に〈【見出し】という〉縦棒グラフを、作る手順
+		見出しというシリーズXを作る
+		シリーズ列1のChartType=「Column」
+		シリーズ列1を返す
+	終わり
+	自分に〈【見出し】という〉面グラフを、作る手順
+		見出しというシリーズXを作る
+		シリーズ列1のChartType=「Area」
+		シリーズ列1を返す
+	終わり
+	自分に〈【見出し】という〉スプライン面グラフを、作る手順
+		見出しというシリーズXを作る
+		シリーズ列1のChartType=「SplineArea」
+		シリーズ列1を返す
+	終わり
+	
+	-自分に〈【見出し】という〉シリーズXを、作る手順
+		シリーズ列1というシリーズを作る
+		もし見出しが無でなければシリーズ列1のLegendText=見出し
+		Series:Add(シリーズ列1)
+		シリーズ列1を返す
+	終わり
+
+	自分に凡例を、作る手順
+		Legends:Add(チャート凡例を作ったもの)
+	終わり
+	自分をクリアする手順
+		Series:Clear()
+		ChartAreas:Clear()
+	終わり
+
+	アノテーションを取得する手順
+		Annotationsを返す
+	終わり
+
+	アンチエイリアスを取得する手順
+		AntiAliasingを返す
+	終わり
+	アンチエイリアスを設定する手順
+		AntiAliasingは、設定値
+	終わり
+
+線色という属性
+	取得する手順
+		BorderColorを返す
+	終わり
+	設定する手順
+		BorderColorは、設定値
+	終わり
+終わり
+
+	背景塗りつぶし方法を取得する手順
+		BackGradientStyleを返す
+	終わり
+	背景塗りつぶし方法を設定する手順
+		BackGradientStyleは、設定値
+	終わり
+
+	背景パターン方法を取得する手順
+		BackHatchStyleを返す
+	終わり
+	背景パターン方法を設定する手順
+		BackHatchStyleは、設定値
+	終わり
+
+背景画像という属性
+	取得する手順
+		BackImageを返す
+	終わり
+	設定する手順
+		BackImageは、設定値
+	終わり
+終わり
+
+背景画像配置という属性
+	取得する手順
+		BackImageAlignmentを返す
+	終わり
+	設定する手順
+		BackImageAlignmentは、設定値
+	終わり
+終わり
+
+	背景画像透過色を取得する手順
+		BackImageTransparentColorを返す
+	終わり
+	背景画像透過色を設定する手順
+		BackImageTransparentColorは、設定値
+	終わり
+
+	背景画像配置方法を取得する手順
+		BackImageWrapModeを返す
+	終わり
+	背景画像配置方法を設定する手順
+		BackImageWrapModeは、設定値
+	終わり
+線色という属性
+	取得する手順
+		BorderColorを返す
+	終わり
+	設定する手順
+		BorderColorは、設定値
+	終わり
+終わり
+
+副背景色という属性
+	取得する手順
+		BackSecondaryColorを返す
+	終わり
+	設定する手順
+		BackSecondaryColorは、設定値
+	終わり
+終わり
+
+	線色を取得する手順
+		BorderColorを返す
+	終わり
+	線色を設定する手順
+		BorderColorは、設定値
+	終わり
+
+	線種を取得する手順
+		BorderDashStyleを返す
+	終わり
+	線種を設定する手順
+		BorderDashStyleは、設定値
+	終わり
+
+	罫線色を取得する手順
+		BorderlineColorを返す
+	終わり
+	罫線色を設定する手順
+		BorderlineColorは、設定値
+	終わり
+
+	罫線種を取得する手順
+		BorderlineDashStyleを返す
+	終わり
+	罫線種を設定する手順
+		BorderlineDashStyleは、設定値
+	終わり
+
+	罫線幅を取得する手順
+		BorderlineWidthを返す
+	終わり
+	罫線幅を設定する手順
+		BorderlineWidthは、設定値
+	終わり
+
+線幅という属性
+	取得する手順
+		BorderWidthを返す
+	終わり
+	設定する手順
+		BorderWidthは、設定値
+	終わり
+終わり
+
+	影を取得する手順
+		IsSoftShadowsを返す
+	終わり
+	影を設定する手順
+		IsSoftShadowsは、設定値
+	終わり
+
+	パレットを取得する手順
+		Paletteを返す
+	終わり
+	パレットを設定する手順
+		Paletteは、設定値
+	終わり
+
+	配色一覧を取得する手順
+		PaletteCustomColorsを返す
+	終わり
+	配色一覧を設定する手順
+		PaletteCustomColorsは、設定値
+	終わり
+
+	プリンタを取得する手順
+		Printingを返す
+	終わり
+	プリンタを設定する手順
+		Printingは、設定値
+	終わり
+
+	シリアライザを取得する手順
+		Serializerを返す
+	終わり
+	シリアライザを設定する手順
+		Serializerは、設定値
+	終わり
+
+	文字アンチエイリアス品質を取得する手順
+		TextAntiAliasingQualityを返す
+	終わり
+	文字アンチエイリアス品質を設定する手順
+		TextAntiAliasingQualityは、設定値
+	終わり
+	初期化開始する手順
+		BeginInit()
+	終わり
+	初期化終了する手順
+		EndInit()
+	終わり
+	背景色を取得する手順
+		BackColorを返す
+	終わり
+	背景色を設定する手順
+		BackColorは、設定値
+	終わり
+/*
+GetChartElementOutline(Object, ChartElementType)
+	背景色を取得する手順
+		BackColorを返す
+	終わり
+	背景色を設定する手順
+		BackColorは、設定値
+	終わり
+HitTest(Int32, Int32)
+	背景色を取得する手順
+		BackColorを返す
+	終わり
+	背景色を設定する手順
+		BackColorは、設定値
+	終わり
+HitTest(Int32, Int32, Boolean)
+	背景色を取得する手順
+		BackColorを返す
+	終わり
+	背景色を設定する手順
+		BackColorは、設定値
+	終わり
+Invalidate()
+	背景色を取得する手順
+		BackColorを返す
+	終わり
+	背景色を設定する手順
+		BackColorは、設定値
+	終わり
+LoadTemplate(String)
+	背景色を取得する手順
+		BackColorを返す
+	終わり
+	背景色を設定する手順
+		BackColorは、設定値
+	終わり
+SaveImage(String, ChartImageFormat)
+	背景色を取得する手順
+		BackColorを返す
+	終わり
+	背景色を設定する手順
+		BackColorは、設定値
+	終わり
+SaveImage(Stream, ImageFormat)
+	背景色を取得する手順
+		BackColorを返す
+	終わり
+	背景色を設定する手順
+		BackColorは、設定値
+	終わり
+UpdateAnnotations()
+	背景色を取得する手順
+		BackColorを返す
+	終わり
+	背景色を設定する手順
+		BackColorは、設定値
+	終わり
+UpdateCursor()
+	背景色を取得する手順
+		BackColorを返す
+	終わり
+	背景色を設定する手順
+		BackColorは、設定値
+	終わり
+*/
+終わり
+シリーズとは
+	"System.Windows.Forms.DataVisualization.Charting.Series"のネット型に対応する
+	自分に【t:データポイント】を加える手順
+		Points:Add(t)
+	終わり
+線幅という属性
+	取得する手順
+		BorderWidthを返す
+	終わり
+	設定する手順
+		BorderWidthは、設定値
+	終わり
+終わり
+	印形状を取得する手順
+		MarkerStyleを返す
+	終わり
+	印形状を設定する手順
+		MarkerStyleは、設定値
+	終わり
+	印サイズを取得する手順
+		MarkerSizeを返す
+	終わり
+	印サイズを設定する手順
+		MarkerSizeは、設定値
+	終わり
+	凡例表示を取得する手順
+		IsVisibleInLegendを返す
+	終わり
+	凡例表示を設定する手順
+		IsVisibleInLegendは、設定値
+	終わり
+終わり
+タイトルとは
+	"System.Windows.Forms.DataVisualization.Charting.Title"のネット型に対応する
+
+	配置を取得する手順
+		Alignmentを返す
+	終わり
+	配置を設定する手順
+		Alignmentは、設定値
+	終わり
+
+背景色という属性
+	取得する手順
+		BackColorを返す
+	終わり
+	設定する手順
+		BackColorは、設定値
+	終わり
+終わり
+
+	背景塗りつぶし方法を取得する手順
+		BackGradientStyleを返す
+	終わり
+	背景塗りつぶし方法を設定する手順
+		BackGradientStyleは、設定値
+	終わり
+
+	背景パターン方法を取得する手順
+		BackHatchStyleを返す
+	終わり
+	背景パターン方法を設定する手順
+		BackHatchStyleは、設定値
+	終わり
+
+背景画像という属性
+	取得する手順
+		BackImageを返す
+	終わり
+	設定する手順
+		BackImageは、設定値
+	終わり
+終わり
+
+背景画像配置という属性
+	取得する手順
+		BackImageAlignmentを返す
+	終わり
+	設定する手順
+		BackImageAlignmentは、設定値
+	終わり
+終わり
+
+背景画像透過色という属性
+	取得する手順
+		BackImageTransparentColorを返す
+	終わり
+	設定する手順
+		BackImageTransparentColorは、設定値
+	終わり
+終わり
+
+背景画像配置方法という属性
+	取得する手順
+		BackImageWrapModeを返す
+	終わり
+	設定する手順
+		BackImageWrapModeは、設定値
+	終わり
+終わり
+
+副背景色という属性
+	取得する手順
+		BackSecondaryColorを返す
+	終わり
+	設定する手順
+		BackSecondaryColorは、設定値
+	終わり
+終わり
+
+線色という属性
+	取得する手順
+		BorderColorを返す
+	終わり
+	設定する手順
+		BorderColorは、設定値
+	終わり
+終わり
+
+線種という属性
+	取得する手順
+		BorderDashStyleを返す
+	終わり
+	設定する手順
+		BorderDashStyleは、設定値
+	終わり
+終わり
+
+線幅という属性
+	取得する手順
+		BorderWidthを返す
+	終わり
+	設定する手順
+		BorderWidthは、設定値
+	終わり
+終わり
+
+エリアドッキングという属性
+	取得する手順
+		DockedToChartAreaを返す
+	終わり
+	設定する手順
+		DockedToChartAreaは、設定値
+	終わり
+終わり
+
+ドッキング方向という属性
+	取得する手順
+		Dockingを返す
+	終わり
+	設定する手順
+		Dockingは、設定値
+	終わり
+終わり
+
+ドッキング余白という属性
+	取得する手順
+		DockingOffsetを返す
+	終わり
+	設定する手順
+		DockingOffsetは、設定値
+	終わり
+終わり
+
+
+フォントという属性
+	取得する手順
+		Fontを返す
+	終わり
+	設定する手順
+		Fontは、設定値
+	終わり
+終わり
+
+文字色という属性
+	取得する手順
+		ForeColorを返す
+	終わり
+	設定する手順
+		ForeColorは、設定値
+	終わり
+終わり
+
+チャート内ドッキングという属性
+	取得する手順
+		IsDockedInsideChartAreaを返す
+	終わり
+	設定する手順
+		IsDockedInsideChartAreaは、設定値
+	終わり
+終わり
+
+名前という属性
+	取得する手順
+		Nameを返す
+	終わり
+	設定する手順
+		Nameは、設定値
+	終わり
+終わり
+
+座標という属性
+	取得する手順
+		Positionを返す
+	終わり
+	設定する手順
+		Positionは、設定値
+	終わり
+終わり
+
+影色という属性
+	取得する手順
+		ShadowColorを返す
+	終わり
+	設定する手順
+		ShadowColorは、設定値
+	終わり
+終わり
+
+影ズレという属性
+	取得する手順
+		ShadowOffsetを返す
+	終わり
+	設定する手順
+		ShadowOffsetは、設定値
+	終わり
+終わり
+
+タグという属性
+	取得する手順
+		Tagを返す
+	終わり
+	設定する手順
+		Tagは、設定値
+	終わり
+終わり
+
+内容という属性
+	取得する手順
+		Textを返す
+	終わり
+	設定する手順
+		Textは、設定値
+	終わり
+終わり
+
+文字方向という属性
+	取得する手順
+		TextOrientationを返す
+	終わり
+	設定する手順
+		TextOrientationは、設定値
+	終わり
+終わり
+
+文字装飾という属性
+	取得する手順
+		TextStyleを返す
+	終わり
+	設定する手順
+		TextStyleは、設定値
+	終わり
+終わり
+
+説明という属性
+	取得する手順
+		ToolTipを返す
+	終わり
+	設定する手順
+		ToolTipは、設定値
+	終わり
+終わり
+
+表示という属性
+	取得する手順
+		Visibleを返す
+	終わり
+	設定する手順
+		Visibleは、設定値
+	終わり
+終わり
+
+終わり
+チャート凡例とは
+	"System.Windows.Forms.DataVisualization.Charting.Legend"のネット型に対応する
+配置という属性
+	取得する手順
+		Alignmentを返す
+	終わり
+	設定する手順
+		Alignmentは、設定値
+	終わり
+終わり
+最小自動調整文字サイズという属性
+	取得する手順
+		AutoFitMinFontSizeを返す
+	終わり
+	設定する手順
+		AutoFitMinFontSizeは、設定値
+	終わり
+終わり
+背景色という属性
+	取得する手順
+		BackColorを返す
+	終わり
+	設定する手順
+		BackColorは、設定値
+	終わり
+終わり
+背景塗りつぶし方法という属性
+	取得する手順
+		BackGradientStyleを返す
+	終わり
+	設定する手順
+		BackGradientStyleは、設定値
+	終わり
+終わり
+背景パターン方法という属性
+	取得する手順
+		BackHatchStyleを返す
+	終わり
+	設定する手順
+		BackHatchStyleは、設定値
+	終わり
+終わり
+背景画像という属性
+	取得する手順
+		BackImageを返す
+	終わり
+	設定する手順
+		BackImageは、設定値
+	終わり
+終わり
+背景画像配置という属性
+	取得する手順
+		BackImageAlignmentを返す
+	終わり
+	設定する手順
+		BackImageAlignmentは、設定値
+	終わり
+終わり
+背景画像透過色という属性
+	取得する手順
+		BackImageTransparentColorを返す
+	終わり
+	設定する手順
+		BackImageTransparentColorは、設定値
+	終わり
+終わり
+背景画像配置方法という属性
+	取得する手順
+		BackImageWrapModeを返す
+	終わり
+	設定する手順
+		BackImageWrapModeは、設定値
+	終わり
+終わり
+副背景色という属性
+	取得する手順
+		BackSecondaryColorを返す
+	終わり
+	設定する手順
+		BackSecondaryColorは、設定値
+	終わり
+終わり
+線色という属性
+	取得する手順
+		BorderColorを返す
+	終わり
+	設定する手順
+		BorderColorは、設定値
+	終わり
+終わり
+線種という属性
+	取得する手順
+		BorderDashStyleを返す
+	終わり
+	設定する手順
+		BorderDashStyleは、設定値
+	終わり
+終わり
+線幅という属性
+	取得する手順
+		BorderWidthを返す
+	終わり
+	設定する手順
+		BorderWidthは、設定値
+	終わり
+終わり
+セル列一覧という属性
+	取得する手順
+		CellColumnsを返す
+	終わり
+	設定する手順
+		CellColumnsは、設定値
+	終わり
+終わり
+カスタム要素という属性
+	取得する手順
+		CustomItemsを返す
+	終わり
+	設定する手順
+		CustomItemsは、設定値
+	終わり
+終わり
+エリアドッキングという属性
+	取得する手順
+		DockedToChartAreaを返す
+	終わり
+	設定する手順
+		DockedToChartAreaは、設定値
+	終わり
+終わり
+ドッキング方向という属性
+	取得する手順
+		Dockingを返す
+	終わり
+	設定する手順
+		Dockingは、設定値
+	終わり
+終わり
+有効という属性
+	取得する手順
+		Enabledを返す
+	終わり
+	設定する手順
+		Enabledは、設定値
+	終わり
+終わり
+フォントという属性
+	取得する手順
+		Fontを返す
+	終わり
+	設定する手順
+		Fontは、設定値
+	終わり
+終わり
+
+文字色という属性
+	取得する手順
+		ForeColorを返す
+	終わり
+	設定する手順
+		ForeColorは、設定値
+	終わり
+終わり
+ヘッダー区切り線という属性
+	取得する手順
+		HeaderSeparatorを返す
+	終わり
+	設定する手順
+		HeaderSeparatorは、設定値
+	終わり
+終わり
+ヘッダー区切り線色という属性
+	取得する手順
+		HeaderSeparatorColorを返す
+	終わり
+	設定する手順
+		HeaderSeparatorColorは、設定値
+	終わり
+終わり
+エリア内という属性
+	取得する手順
+		InsideChartAreaを返す
+	終わり
+	設定する手順
+		InsideChartAreaは、設定値
+	終わり
+終わり
+インタレース行という属性
+	取得する手順
+		InterlacedRowsを返す
+	終わり
+	設定する手順
+		InterlacedRowsは、設定値
+	終わり
+終わり
+インタレース行色という属性
+	取得する手順
+		InterlacedRowsColorを返す
+	終わり
+	設定する手順
+		InterlacedRowsColorは、設定値
+	終わり
+終わり
+チャート内ドッキングという属性
+	取得する手順
+		IsDockedInsideChartAreaを返す
+	終わり
+	設定する手順
+		IsDockedInsideChartAreaは、設定値
+	終わり
+終わり
+要素等間隔という属性
+	取得する手順
+		IsEquallySpacedItemsを返す
+	終わり
+	設定する手順
+		IsEquallySpacedItemsは、設定値
+	終わり
+終わり
+文字自動調整という属性
+	取得する手順
+		IsTextAutoFitを返す
+	終わり
+	設定する手順
+		IsTextAutoFitは、設定値
+	終わり
+終わり
+要素列区切り線という属性
+	取得する手順
+		ItemColumnSeparatorを返す
+	終わり
+	設定する手順
+		ItemColumnSeparatorは、設定値
+	終わり
+終わり
+要素列区切り線色という属性
+	取得する手順
+		ItemColumnSeparatorColorを返す
+	終わり
+	設定する手順
+		ItemColumnSeparatorColorは、設定値
+	終わり
+終わり
+要素列スペースという属性
+	取得する手順
+		ItemColumnSpacingを返す
+	終わり
+	設定する手順
+		ItemColumnSpacingは、設定値
+	終わり
+終わり
+凡例要素順という属性
+	取得する手順
+		LegendItemOrderを返す
+	終わり
+	設定する手順
+		LegendItemOrderは、設定値
+	終わり
+終わり
+凡例スタイルという属性
+	取得する手順
+		LegendStyleを返す
+	終わり
+	設定する手順
+		LegendStyleは、設定値
+	終わり
+終わり
+最大自動サイズという属性
+	取得する手順
+		MaximumAutoSizeを返す
+	終わり
+	設定する手順
+		MaximumAutoSizeは、設定値
+	終わり
+終わり
+名前という属性
+	取得する手順
+		Nameを返す
+	終わり
+	設定する手順
+		Nameは、設定値
+	終わり
+終わり
+座標という属性
+	取得する手順
+		Positionを返す
+	終わり
+	設定する手順
+		Positionは、設定値
+	終わり
+終わり
+
+影色という属性
+	取得する手順
+		ShadowColorを返す
+	終わり
+	設定する手順
+		ShadowColorは、設定値
+	終わり
+終わり
+影ズレという属性
+	取得する手順
+		ShadowOffsetを返す
+	終わり
+	設定する手順
+		ShadowOffsetは、設定値
+	終わり
+終わり
+
+タイトルスタイルという属性
+	取得する手順
+		TableStyleを返す
+	終わり
+	設定する手順
+		TableStyleは、設定値
+	終わり
+終わり
+文字折り返し閾値という属性
+	取得する手順
+		TextWrapThresholdを返す
+	終わり
+	設定する手順
+		TextWrapThresholdは、設定値
+	終わり
+終わり
+タイトルという属性
+	取得する手順
+		Titleを返す
+	終わり
+	設定する手順
+		Titleは、設定値
+	終わり
+終わり
+タイトル配置という属性
+	取得する手順
+		TitleAlignmentを返す
+	終わり
+	設定する手順
+		TitleAlignmentは、設定値
+	終わり
+終わり
+タイトル背景色という属性
+	取得する手順
+		TitleBackColorを返す
+	終わり
+	設定する手順
+		TitleBackColorは、設定値
+	終わり
+終わり
+タイトルフォントという属性
+	取得する手順
+		TitleFontを返す
+	終わり
+	設定する手順
+		TitleFontは、設定値
+	終わり
+終わり
+見出し文字色という属性
+	取得する手順
+		TitleForeColorを返す
+	終わり
+	設定する手順
+		TitleForeColorは、設定値
+	終わり
+終わり
+タイトル区切り線という属性
+	取得する手順
+		TitleSeparatorを返す
+	終わり
+	設定する手順
+		TitleSeparatorは、設定値
+	終わり
+終わり
+タイトル区切り線色という属性
+	取得する手順
+		TitleSeparatorColorを返す
+	終わり
+	設定する手順
+		TitleSeparatorColorは、設定値
+	終わり
+終わり
+終わり
+データポイントとは
+	"System.Windows.Forms.DataVisualization.Charting.DataPoint"のネット型に対応する
+	はじめ(X,Y)の手順=(X,Y)
+
+	終わり
+軸見出しという属性
+	取得する手順
+		AxisLabelを返す
+	終わり
+	設定する手順
+		AxisLabelは、設定値
+	終わり
+終わり
+背景塗りつぶし方法という属性
+	取得する手順
+		BackGradientStyleを返す
+	終わり
+	設定する手順
+		BackGradientStyleは、設定値
+	終わり
+終わり
+背景パターン方法という属性
+	取得する手順
+		BackHatchStyleを返す
+	終わり
+	設定する手順
+		BackHatchStyleは、設定値
+	終わり
+終わり
+背景画像という属性
+	取得する手順
+		BackImageを返す
+	終わり
+	設定する手順
+		BackImageは、設定値
+	終わり
+終わり
+背景画像配置という属性
+	取得する手順
+		BackImageAlignmentを返す
+	終わり
+	設定する手順
+		BackImageAlignmentは、設定値
+	終わり
+終わり
+背景画像透過色という属性
+	取得する手順
+		BackImageTransparentColorを返す
+	終わり
+	設定する手順
+		BackImageTransparentColorは、設定値
+	終わり
+終わり
+背景画像配置方法という属性
+	取得する手順
+		BackImageWrapModeを返す
+	終わり
+	設定する手順
+		BackImageWrapModeは、設定値
+	終わり
+終わり
+副背景色という属性
+	取得する手順
+		BackSecondaryColorを返す
+	終わり
+	設定する手順
+		BackSecondaryColorは、設定値
+	終わり
+終わり
+線色という属性
+	取得する手順
+		BorderColorを返す
+	終わり
+	設定する手順
+		BorderColorは、設定値
+	終わり
+終わり
+線種という属性
+	取得する手順
+		BorderDashStyleを返す
+	終わり
+	設定する手順
+		BorderDashStyleは、設定値
+	終わり
+終わり
+線幅という属性
+	取得する手順
+		BorderWidthを返す
+	終わり
+	設定する手順
+		BorderWidthは、設定値
+	終わり
+終わり
+色という属性
+	取得する手順
+		Colorを返す
+	終わり
+	設定する手順
+		Colorは、設定値
+	終わり
+終わり
+カスタム項目一覧という属性
+	取得する手順
+		CustomPropertiesを返す
+	終わり
+	設定する手順
+		CustomPropertiesは、設定値
+	終わり
+終わり
+拡張カスタム項目一覧という属性
+	取得する手順
+		CustomPropertiesExtendedを返す
+	終わり
+	設定する手順
+		CustomPropertiesExtendedは、設定値
+	終わり
+終わり
+フォントという属性
+	取得する手順
+		Fontを返す
+	終わり
+	設定する手順
+		Fontは、設定値
+	終わり
+終わり
+
+空という属性
+	取得する手順
+		IsEmptyを返す
+	終わり
+	設定する手順
+		IsEmptyは、設定値
+	終わり
+終わり
+見出し値表示という属性
+	取得する手順
+		IsValueShownAsLabelを返す
+	終わり
+	設定する手順
+		IsValueShownAsLabelは、設定値
+	終わり
+終わり
+凡例表示という属性
+	取得する手順
+		IsVisibleInLegendを返す
+	終わり
+	設定する手順
+		IsVisibleInLegendは、設定値
+	終わり
+終わり
+見出しという属性
+	取得する手順
+		Labelを返す
+	終わり
+	設定する手順
+		Labelは、設定値
+	終わり
+終わり
+見出し角度という属性
+	取得する手順
+		LabelAngleを返す
+	終わり
+	設定する手順
+		LabelAngleは、設定値
+	終わり
+終わり
+見出し背景色という属性
+	取得する手順
+		LabelBackColorを返す
+	終わり
+	設定する手順
+		LabelBackColorは、設定値
+	終わり
+終わり
+見出し線色という属性
+	取得する手順
+		LabelBorderColorを返す
+	終わり
+	設定する手順
+		LabelBorderColorは、設定値
+	終わり
+終わり
+見出し線種という属性
+	取得する手順
+		LabelBorderDashStyleを返す
+	終わり
+	設定する手順
+		LabelBorderDashStyleは、設定値
+	終わり
+終わり
+見出し線幅という属性
+	取得する手順
+		LabelBorderWidthを返す
+	終わり
+	設定する手順
+		LabelBorderWidthは、設定値
+	終わり
+終わり
+見出し文字色という属性
+	取得する手順
+		LabelForeColorを返す
+	終わり
+	設定する手順
+		LabelForeColorは、設定値
+	終わり
+終わり
+見出し書式という属性
+	取得する手順
+		LabelFormatを返す
+	終わり
+	設定する手順
+		LabelFormatは、設定値
+	終わり
+終わり
+
+見出し説明という属性
+	取得する手順
+		LabelToolTipを返す
+	終わり
+	設定する手順
+		LabelToolTipは、設定値
+	終わり
+終わり
+
+凡例内容という属性
+	取得する手順
+		LegendTextを返す
+	終わり
+	設定する手順
+		LegendTextは、設定値
+	終わり
+終わり
+
+凡例説明という属性
+	取得する手順
+		LegendToolTipを返す
+	終わり
+	設定する手順
+		LegendToolTipは、設定値
+	終わり
+終わり
+目盛り線色という属性
+	取得する手順
+		MarkerBorderColorを返す
+	終わり
+	設定する手順
+		MarkerBorderColorは、設定値
+	終わり
+終わり
+目盛り線幅という属性
+	取得する手順
+		MarkerBorderWidthを返す
+	終わり
+	設定する手順
+		MarkerBorderWidthは、設定値
+	終わり
+終わり
+目盛り色という属性
+	取得する手順
+		MarkerColorを返す
+	終わり
+	設定する手順
+		MarkerColorは、設定値
+	終わり
+終わり
+目盛り画像という属性
+	取得する手順
+		MarkerImageを返す
+	終わり
+	設定する手順
+		MarkerImageは、設定値
+	終わり
+終わり
+目盛り画像透過色という属性
+	取得する手順
+		MarkerImageTransparentColorを返す
+	終わり
+	設定する手順
+		MarkerImageTransparentColorは、設定値
+	終わり
+終わり
+目盛りサイズという属性
+	取得する手順
+		MarkerSizeを返す
+	終わり
+	設定する手順
+		MarkerSizeは、設定値
+	終わり
+終わり
+目盛りスタイルという属性
+	取得する手順
+		MarkerStyleを返す
+	終わり
+	設定する手順
+		MarkerStyleは、設定値
+	終わり
+終わり
+名前という属性
+	取得する手順
+		Nameを返す
+	終わり
+	設定する手順
+		Nameは、設定値
+	終わり
+終わり
+タグという属性
+	取得する手順
+		Tagを返す
+	終わり
+	設定する手順
+		Tagは、設定値
+	終わり
+終わり
+
+説明という属性
+	取得する手順
+		ToolTipを返す
+	終わり
+	設定する手順
+		ToolTipは、設定値
+	終わり
+終わり
+
+横という属性
+	取得する手順
+		XValueを返す
+	終わり
+	設定する手順
+		XValueは、設定値
+	終わり
+終わり
+
+縦という属性
+	取得する手順
+		YValuesを返す
+	終わり
+	設定する手順
+		YValuesは、設定値
+	終わり
+終わり
+/*
+DeleteCustomProperty(String)	
+GetCustomProperty(String)
+GetValueByName(String)
+IsCustomPropertySet(String)
+ResetIsValueShownAsLabel()
+ResetIsVisibleInLegend()
+SetCustomProperty(String, String)
+SetDefault(Boolean)
+SetValueXY(Object, Object[])
+SetValueY(Object[])
+*/
+終わり
+チャートエリアとは
+	"System.Windows.Forms.DataVisualization.Charting.ChartArea"のネット型に対応する
+
+配置方向という属性
+	取得する手順
+		AlignmentOrientationを返す
+	終わり
+	設定する手順
+		AlignmentOrientationは、設定値
+	終わり
+終わり
+
+配置スタイルという属性
+	取得する手順
+		AlignmentStyleを返す
+	終わり
+	設定する手順
+		AlignmentStyleは、設定値
+	終わり
+終わり
+
+整列対象エリアという属性
+	取得する手順
+		AlignWithChartAreaを返す
+	終わり
+	設定する手順
+		AlignWithChartAreaは、設定値
+	終わり
+終わり
+
+エリア3Dスタイルという属性
+	取得する手順
+		Area3DStyleを返す
+	終わり
+	設定する手順
+		Area3DStyleは、設定値
+	終わり
+終わり
+
+軸一覧という属性
+	取得する手順
+		Axesを返す
+	終わり
+	設定する手順
+		Axesは、設定値
+	終わり
+終わり
+
+軸Xという属性
+	取得する手順
+		AxisXを返す
+	終わり
+	設定する手順
+		AxisXは、設定値
+	終わり
+終わり
+
+軸X2という属性
+	取得する手順
+		AxisX2を返す
+	終わり
+	設定する手順
+		AxisX2は、設定値
+	終わり
+終わり
+
+軸Yという属性
+	取得する手順
+		AxisYを返す
+	終わり
+	設定する手順
+		AxisYは、設定値
+	終わり
+終わり
+
+軸Y2という属性
+	取得する手順
+		AxisY2を返す
+	終わり
+	設定する手順
+		AxisY2は、設定値
+	終わり
+終わり
+
+背景色という属性
+	取得する手順
+		BackColorを返す
+	終わり
+	設定する手順
+		BackColorは、設定値
+	終わり
+終わり
+
+背景塗りつぶし方法という属性
+	取得する手順
+		BackGradientStyleを返す
+	終わり
+	設定する手順
+		BackGradientStyleは、設定値
+	終わり
+終わり
+
+背景パターン方法という属性
+	取得する手順
+		BackHatchStyleを返す
+	終わり
+	設定する手順
+		BackHatchStyleは、設定値
+	終わり
+終わり
+
+背景画像という属性
+	取得する手順
+		BackImageを返す
+	終わり
+	設定する手順
+		BackImageは、設定値
+	終わり
+終わり
+
+背景画像配置という属性
+	取得する手順
+		BackImageAlignmentを返す
+	終わり
+	設定する手順
+		BackImageAlignmentは、設定値
+	終わり
+終わり
+
+背景画像透過色という属性
+	取得する手順
+		BackImageTransparentColorを返す
+	終わり
+	設定する手順
+		BackImageTransparentColorは、設定値
+	終わり
+終わり
+
+背景画像配置方法という属性
+	取得する手順
+		BackImageWrapModeを返す
+	終わり
+	設定する手順
+		BackImageWrapModeは、設定値
+	終わり
+終わり
+
+副背景色という属性
+	取得する手順
+		BackSecondaryColorを返す
+	終わり
+	設定する手順
+		BackSecondaryColorは、設定値
+	終わり
+終わり
+
+線色という属性
+	取得する手順
+		BorderColorを返す
+	終わり
+	設定する手順
+		BorderColorは、設定値
+	終わり
+終わり
+
+線種という属性
+	取得する手順
+		BorderDashStyleを返す
+	終わり
+	設定する手順
+		BorderDashStyleは、設定値
+	終わり
+終わり
+
+線幅という属性
+	取得する手順
+		BorderWidthを返す
+	終わり
+	設定する手順
+		BorderWidthは、設定値
+	終わり
+終わり
+
+横カーソルという属性
+	取得する手順
+		CursorXを返す
+	終わり
+	設定する手順
+		CursorXは、設定値
+	終わり
+終わり
+
+縦カーソルという属性
+	取得する手順
+		CursorYを返す
+	終わり
+	設定する手順
+		CursorYは、設定値
+	終わり
+終わり
+
+内部点座標という属性
+	取得する手順
+		InnerPlotPositionを返す
+	終わり
+	設定する手順
+		InnerPlotPositionは、設定値
+	終わり
+終わり
+
+軸文字サイズ統一という属性
+	取得する手順
+		IsSameFontSizeForAllAxesを返す
+	終わり
+	設定する手順
+		IsSameFontSizeForAllAxesは、設定値
+	終わり
+終わり
+
+名前という属性
+	取得する手順
+		Nameを返す
+	終わり
+	設定する手順
+		Nameは、設定値
+	終わり
+終わり
+
+座標という属性
+	取得する手順
+		Positionを返す
+	終わり
+	設定する手順
+		Positionは、設定値
+	終わり
+終わり
+
+影色という属性
+	取得する手順
+		ShadowColorを返す
+	終わり
+	設定する手順
+		ShadowColorは、設定値
+	終わり
+終わり
+
+影ズレという属性
+	取得する手順
+		ShadowOffsetを返す
+	終わり
+	設定する手順
+		ShadowOffsetは、設定値
+	終わり
+終わり
+タグという属性
+	取得する手順
+		Tagを返す
+	終わり
+	設定する手順
+		Tagは、設定値
+	終わり
+終わり
+表示という属性
+	取得する手順
+		Visibleを返す
+	終わり
+	設定する手順
+		Visibleは、設定値
+	終わり
+終わり
+
+終わり
+チャート軸とは
+	"System.Windows.Forms.DataVisualization.Charting.Axis"のネット型に対応する
+
+矢印スタイルという属性
+	取得する手順
+		ArrowStyleを返す
+	終わり
+	設定する手順
+		ArrowStyleは、設定値
+	終わり
+終わり
+
+軸名という属性
+	取得する手順
+		AxisNameを返す
+	終わり
+	設定する手順
+		AxisNameは、設定値
+	終わり
+終わり
+
+交差という属性
+	取得する手順
+		Crossingを返す
+	終わり
+	設定する手順
+		Crossingは、設定値
+	終わり
+終わり
+
+カスタムラベルという属性
+	取得する手順
+		CustomLabelsを返す
+	終わり
+	設定する手順
+		CustomLabelsは、設定値
+	終わり
+終わり
+
+有効という属性
+	取得する手順
+		Enabledを返す
+	終わり
+	設定する手順
+		Enabledは、設定値
+	終わり
+終わり
+
+インタレース色という属性
+	取得する手順
+		InterlacedColorを返す
+	終わり
+	設定する手順
+		InterlacedColorは、設定値
+	終わり
+終わり
+
+間隔という属性
+	取得する手順
+		Intervalを返す
+	終わり
+	設定する手順
+		Intervalは、設定値
+	終わり
+終わり
+
+間隔自動調整という属性
+	取得する手順
+		IntervalAutoModeを返す
+	終わり
+	設定する手順
+		IntervalAutoModeは、設定値
+	終わり
+終わり
+
+間隔差という属性
+	取得する手順
+		IntervalOffsetを返す
+	終わり
+	設定する手順
+		IntervalOffsetは、設定値
+	終わり
+終わり
+
+間隔差種という属性
+	取得する手順
+		IntervalOffsetTypeを返す
+	終わり
+	設定する手順
+		IntervalOffsetTypeは、設定値
+	終わり
+終わり
+
+間隔種という属性
+	取得する手順
+		IntervalTypeを返す
+	終わり
+	設定する手順
+		IntervalTypeは、設定値
+	終わり
+終わり
+
+インタレースという属性
+	取得する手順
+		IsInterlacedを返す
+	終わり
+	設定する手順
+		IsInterlacedは、設定値
+	終わり
+終わり
+
+見出し自動調整という属性
+	取得する手順
+		IsLabelAutoFitを返す
+	終わり
+	設定する手順
+		IsLabelAutoFitは、設定値
+	終わり
+終わり
+
+対数という属性
+	取得する手順
+		IsLogarithmicを返す
+	終わり
+	設定する手順
+		IsLogarithmicは、設定値
+	終わり
+終わり
+
+余白表示という属性
+	取得する手順
+		IsMarginVisibleを返す
+	終わり
+	設定する手順
+		IsMarginVisibleは、設定値
+	終わり
+終わり
+
+目盛り軸移動という属性
+	取得する手順
+		IsMarksNextToAxisを返す
+	終わり
+	設定する手順
+		IsMarksNextToAxisは、設定値
+	終わり
+終わり
+
+反転という属性
+	取得する手順
+		IsReversedを返す
+	終わり
+	設定する手順
+		IsReversedは、設定値
+	終わり
+終わり
+
+ゼロ開始という属性
+	取得する手順
+		IsStartedFromZeroを返す
+	終わり
+	設定する手順
+		IsStartedFromZeroは、設定値
+	終わり
+終わり
+
+最大見出しフォントサイズという属性
+	取得する手順
+		LabelAutoFitMaxFontSizeを返す
+	終わり
+	設定する手順
+		LabelAutoFitMaxFontSizeは、設定値
+	終わり
+終わり
+
+最小見出しフォントサイズという属性
+	取得する手順
+		LabelAutoFitMinFontSizeを返す
+	終わり
+	設定する手順
+		LabelAutoFitMinFontSizeは、設定値
+	終わり
+終わり
+
+見出し調整スタイルという属性
+	取得する手順
+		LabelAutoFitStyleを返す
+	終わり
+	設定する手順
+		LabelAutoFitStyleは、設定値
+	終わり
+終わり
+
+見出しスタイルという属性
+	取得する手順
+		LabelStyleを返す
+	終わり
+	設定する手順
+		LabelStyleは、設定値
+	終わり
+終わり
+
+線色という属性
+	取得する手順
+		LineColorを返す
+	終わり
+	設定する手順
+		LineColorは、設定値
+	終わり
+終わり
+
+線種という属性
+	取得する手順
+		LineDashStyleを返す
+	終わり
+	設定する手順
+		LineDashStyleは、設定値
+	終わり
+終わり
+
+線幅という属性
+	取得する手順
+		LineWidthを返す
+	終わり
+	設定する手順
+		LineWidthは、設定値
+	終わり
+終わり
+
+対数基という属性
+	取得する手順
+		LogarithmBaseを返す
+	終わり
+	設定する手順
+		LogarithmBaseは、設定値
+	終わり
+終わり
+
+大グリッド線という属性
+	取得する手順
+		MajorGridを返す
+	終わり
+	設定する手順
+		MajorGridは、設定値
+	終わり
+終わり
+
+大目盛りという属性
+	取得する手順
+		MajorTickMarkを返す
+	終わり
+	設定する手順
+		MajorTickMarkは、設定値
+	終わり
+終わり
+
+最大値という属性
+	取得する手順
+		Maximumを返す
+	終わり
+	設定する手順
+		Maximumは、設定値
+	終わり
+終わり
+
+最大自動サイズという属性
+	取得する手順
+		MaximumAutoSizeを返す
+	終わり
+	設定する手順
+		MaximumAutoSizeは、設定値
+	終わり
+終わり
+
+最小値という属性
+	取得する手順
+		Minimumを返す
+	終わり
+	設定する手順
+		Minimumは、設定値
+	終わり
+終わり
+
+小グリッド線という属性
+	取得する手順
+		MinorGridを返す
+	終わり
+	設定する手順
+		MinorGridは、設定値
+	終わり
+終わり
+
+小目盛りという属性
+	取得する手順
+		MinorTickMarkを返す
+	終わり
+	設定する手順
+		MinorTickMarkは、設定値
+	終わり
+終わり
+
+名前という属性
+	取得する手順
+		Nameを返す
+	終わり
+	設定する手順
+		Nameは、設定値
+	終わり
+終わり
+
+スケール折り返しスタイルという属性
+	取得する手順
+		ScaleBreakStyleを返す
+	終わり
+	設定する手順
+		ScaleBreakStyleは、設定値
+	終わり
+終わり
+
+スケールビューという属性
+	取得する手順
+		ScaleViewを返す
+	終わり
+	設定する手順
+		ScaleViewは、設定値
+	終わり
+終わり
+
+スクロールバーという属性
+	取得する手順
+		ScrollBarを返す
+	終わり
+	設定する手順
+		ScrollBarは、設定値
+	終わり
+終わり
+
+縞線という属性
+	取得する手順
+		StripLinesを返す
+	終わり
+	設定する手順
+		StripLinesは、設定値
+	終わり
+終わり
+タグという属性
+	取得する手順
+		Tagを返す
+	終わり
+	設定する手順
+		Tagは、設定値
+	終わり
+終わり
+
+文字方向という属性
+	取得する手順
+		TextOrientationを返す
+	終わり
+	設定する手順
+		TextOrientationは、設定値
+	終わり
+終わり
+
+タイトルという属性
+	取得する手順
+		Titleを返す
+	終わり
+	設定する手順
+		Titleは、設定値
+	終わり
+終わり
+
+タイトル配置という属性
+	取得する手順
+		TitleAlignmentを返す
+	終わり
+	設定する手順
+		TitleAlignmentは、設定値
+	終わり
+終わり
+
+タイトルフォントという属性
+	取得する手順
+		TitleFontを返す
+	終わり
+	設定する手順
+		TitleFontは、設定値
+	終わり
+終わり
+
+タイトル文字色という属性
+	取得する手順
+		TitleForeColorを返す
+	終わり
+	設定する手順
+		TitleForeColorは、設定値
+	終わり
+終わり
+タイトル説明という属性
+	取得する手順
+		TitleToolTipを返す
+	終わり
+	設定する手順
+		TitleToolTipは、設定値
+	終わり
+終わり
+
+終わり
